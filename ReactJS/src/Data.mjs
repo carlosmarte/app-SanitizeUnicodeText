@@ -1,0 +1,46 @@
+export const characterData = {
+  descriptions: {
+    "\u2018": `Left single quotation mark`,
+    "\u2019": `Right single quotation mark`,
+    "\u201C": `Left double quotation mark`,
+    "\u201D": `Right double quotation mark`,
+    "\u201E": `Double low-9 quotation mark`,
+    "\u201F": `Double high-reversed-9 quotation mark`,
+    "\u2013": `En dash`,
+    "\u2014": `Em dash`,
+    "\u2012": `Figure dash`,
+    "\u2015": `Horizontal bar`,
+    "\u2026": `Horizontal ellipsis`,
+    "\u2022": `Bullet`,
+    "\u00B7": `Middle dot`,
+    "\u2009": `Narrow no-break space`,
+    "\u00A0": `No-break space`,
+    "\u3000": `Full-width space`,
+    "\u2003": `Em space`,
+  },
+
+  replacements: {
+    "\u2018": `'`,
+    "\u2019": `'`,
+    "\u201C": `"`,
+    "\u201D": `"`,
+    "\u201E": `"`,
+    "\u201F": `"`,
+    "\u2013": `-`,
+    "\u2014": `-`,
+    "\u2012": `-`,
+    "\u2015": `-`,
+    "\u2026": `...`,
+    "\u2022": `-`,
+    "\u00B7": `-`,
+    "\u2009": ` `,
+    "\u00A0": ` `,
+    "\u3000": ` `,
+    "\u2003": ` `,
+  },
+
+  sampleText: `\u201CSmart\u201D quotes, em\u2013dashes \u2014 and ellipsis\u2026 with \u2022 bullets \u00B7 and non-breaking\u00A0space.`,
+
+  specialCharRegex:
+    /[\u2018\u2019\u201C\u201D\u201E\u201F\u2013\u2014\u2012\u2015\u2026\u2022\u00B7\u2009\u00A0\u3000\u2003]/g,
+};
